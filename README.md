@@ -4,6 +4,7 @@
 
 ## About the website
 This is a static website for the National Council for Prescription Drug Programs (NCPDP). The website provides information about the organization, its history, applications, services, and contact information.
+
 This website uses Javascript to do the Parallex effect:
 <ul>
   <li>

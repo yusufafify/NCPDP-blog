@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Defining the document's header information -->
+
+<head>
+  <!-- Setting the character encoding to UTF-8 to support a wide range of characters -->
+  <meta charset="UTF-8">
+  <!-- Setting the X-UA-Compatible meta tag to ensure compatibility with Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Setting the viewport meta tag to ensure proper rendering on different devices with varying screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Including Font Awesome stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+  <!-- Including Bootstrap stylesheets -->
+  <link rel="stylesheet" href="..\css\bootstrap.min.css">
+  <!-- Including custom stylesheet -->
+  <link rel="stylesheet" href="..\css\style.css">
+  <!-- Preconnecting to Google Fonts to reduce latency -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Including Poppins font from Google Fonts with specified font weights -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Including Material Symbols Outlined font from Google Fonts with specified font properties -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+  <!-- Adding a favicon to the page -->
+  <link rel="icon" href="..\Images\Logo.png">
+  <!-- Setting the title of the page -->
+  <title>NCPDP</title>
+</head>
+
+<!--The Body section of The HTML-->
+
+<body>
+  <nav id="navbar">
+    <!-- Navigation bar container -->
+    <div class="nav">
+      <!-- Navigation bar items -->
+      <div class="left">
+        <!-- NCPDP logo and name -->
+        <a>
+          <img class="logo" src="..\Images\Logo.png" alt="NCPDP Logo">
+          <h3>NCPDP</h3>
+        </a>
+      </div>
+      <div class="right">
+        <!-- Navigation links: Home and Content -->
+        <a href="#wel">
+          <li>Home</li>
+        </a>
+        <li class="nav-item dropdown" id="btn">
+          <!-- Content dropdown menu -->
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Content</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#what">What is NCPDP?</a></li>
+            <li><a class="dropdown-item" href="#history">History</a></li>
+            <li><a class="dropdown-item" href="#applications">Applications</a></li>
+            <li><a class="dropdown-item" href="#services">Service & classes</a></li>
+            <li><a class="dropdown-item" href="#about">About Us</a></li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Add the introduction section -->
+  <div class="bgimg-1" id="wel">
+    <!--adding a div to conatin all the content and apply the same style on the content of the div give this an id of home to get back to it when the corresponding name in the navbar is hit and a class to be used in the css -->
+    <div class="caption"> <!--giving a class here to make a specific style for the inner div-->
+      <span class="border" style="font-size: 50px;">NCPDP</span>
+    </div>
+  </div>
+  <div id="what"></div>
+  <div class="bg-light"> <!--give it a class to add styles to it in the css file-->
+    <h3>What is NCPDP?</h3>
+    <p>
+      NCPDP stands for National Council for Prescription Drug Programs. It is a non-profit organization that works
+      towards improving patient safety and interoperability in the pharmacy industry through the development and
+      implementation of standardized electronic transaction standards. Their membership includes healthcare providers,
+      payers, government agencies, technology vendors, and other stakeholders in the healthcare industry. NCPDP is
+      committed to advancing the adoption and use of electronic health records, ensuring secure and reliable data
+      exchange, and promoting industry collaboration to address complex healthcare challenges. Their standards are
+      recognized and used throughout the healthcare industry to reduce errors, improve patient outcomes, and increase
+      efficiency.
+    </p>
+  </div>
+  <!-- ***************************************END OF Introduction*********************************************** -->
+
+  <!-- Add the first topic of the report -->
+  <div class="bgimg-2" id="history">
+    <!--give this an id of home to get back to it when the corresponding name in the navbar is hit and a class to be used in the css -->
+    <div class="caption">
+      <span class="border">History Of NCPDP</span>
+    </div>
+  </div>
+
+  <div style="position: relative;"><!--giving a position style to be relative so that it can be easily shifted-->
+    <div class="bg-dark">
+      <h3 class="light-text">History:</h3>
+      <p>
+        The National Council for Prescription Drug Programs, was founded in 1977 as a non-profit organization dedicated
+        to standardizing electronic data interchange for pharmacy-related transactions. Initially, the organization
+        focused on the development of a standardized format for electronic billing of prescription drugs, but over time,
+        its scope expanded to include other areas of pharmacy operations.
+
+        In the 1980s and 1990s, NCPDP played a key role in the development and adoption of electronic prescribing
+        standards, which enabled healthcare providers to electronically transmit prescriptions to pharmacies. This
+        helped to reduce errors and improve patient safety, as well as streamline pharmacy operations.
+
+        In the early 2000s, NCPDP worked on the development of a standard for medication history, which allowed
+        healthcare providers to access a patient's complete medication history electronically. This standard helped to
+        reduce the risk of adverse drug events and improved patient outcomes.
+
+        Today, NCPDP continues to develop and promote standards for electronic pharmacy-related transactions, as well as
+        provide education and resources to its members and the healthcare industry at large. Its standards are
+        recognized and used throughout the healthcare industry, and NCPDP remains committed to improving patient safety
+        and interoperability in the pharmacy industry.
+      </p>
+    </div>
+  </div>
+  <!-- ***************************************END OF First Topic*********************************************** -->
+
+  <!--The Second topic of the report-->
+  <div class="bgimg-3" id="applications">
+    <!--give this an id of home to get back to it when the corresponding name in the navbar is hit and a class to be used in the css -->
+    <div class="caption">
+      <span class="border">Applications</span>
+    </div>
+  </div>
+
+  <div style="position: relative;">
+    <div class="bg-dark">
+      <h3 class="light-text">
+        Applications of NCPDP
+      </h3>
+      <ol>
+        <li><strong> Electronic prescribing (ePrescribing):</strong> NCPDP has developed standards that enable
+          healthcare providers to
+          electronically transmit prescriptions to pharmacies, improving accuracy and reducing errors.</li>
+        <li><strong>Medication history:</strong>NCPDP's standards for medication history allow healthcare providers to
+          access a patient's
+          complete medication history electronically, reducing the risk of adverse drug events.</li>
+        <li><strong>Prior authorization:</strong> NCPDP has developed standards for electronic prior authorization,
+          which streamlines the
+          process for obtaining approval from payers for certain medications.</li>
+        <li><strong>Claims processing:</strong> NCPDP's standards for electronic claims processing enable pharmacies and
+          other healthcare
+          providers to submit claims electronically to payers, reducing errors and improving efficiency.</li>
+        <li><strong>Medication adherence:</strong> NCPDP's standards for medication adherence help healthcare providers
+          and payers to track
+          patient adherence to medication regimens, which can help to improve patient outcomes and reduce healthcare
+          costs.</li>
+      </ol>
+    </div>
+  </div>
+  <!-- ***************************************END OF Second Topic*********************************************** -->
+
+  <!--The Third topic of the report-->
+  <div class="bgimg-4" id="services">
+    <div class="caption">
+      <span class="border">Services and Classes</span>
+    </div>
+  </div>
+
+  <div style="position: relative;">
+    <div class="bg-dark">
+      <h3 class="light-text">
+        Services and Classes
+      </h3>
+      <p>
+        NCPDP provides a range of services and classes related to electronic pharmacy-related transactions and
+        healthcare industry standards. Here is an overview of some of NCPDP's services and classes:
+      </p>
+      <ol>
+        <li><strong> Standards development:</strong> NCPDP develops and maintains standards for electronic
+          pharmacy-related transactions, including prescription processing, medication history, claims processing, and
+          prior authorization.</li>
+        <li><strong> Education and training:</strong>NCPDP offers education and training programs to help healthcare
+          providers, payers, and other stakeholders understand and implement the organization's standards and best
+          practices.</li>
+        <li><strong> Industry collaboration:</strong> NCPDP works closely with other healthcare industry organizations
+          to promote interoperability and improve patient safety and healthcare outcomes.</li>
+        <li><strong> Certification and accreditation: </strong> NCPDP provides certification and accreditation programs
+          to help pharmacies and other healthcare organizations demonstrate compliance with industry standards and best
+          practices.</li>
+        <li><strong>Workgroups and committees:</strong> NCPDP's workgroups and committees provide a forum for
+          stakeholders to collaborate on developing and refining industry standards and best practices.</li>
+        <li><strong> Conferences and events:</strong> NCPDP hosts conferences and events throughout the year to bring
+          together stakeholders from across the healthcare industry to discuss current issues and trends, share best
+          practices, and network.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ***************************************END OF Third Topic*********************************************** -->
+
+
+  <!--The Fourth topic of the report-->
+
+  <div class="bgimg-5" id="about">
+    <div class="caption">
+      <span class="border">About Us</span>
+    </div>
+  </div>
+
+  <div style="position: relative;">
+    <div class="bg-dark">
+      <p>
+        We are a not-for-profit organization dedicated to improving patient safety and interoperability in the pharmacy
+        industry. Since our founding in 1977, we have played a vital role in shaping standards for electronic
+        prescribing, pharmacy data exchange, and medication-related transactions.
+
+        Our membership includes healthcare providers, payers, government agencies, technology vendors, and other
+        stakeholders. Together, we work to streamline pharmacy operations and improve patient care through the
+        development and implementation of standardized electronic transaction standards.
+
+        At NCPDP, we are committed to advancing the adoption and use of electronic health records, ensuring secure and
+        reliable data exchange, and promoting industry collaboration to address complex healthcare challenges. Our
+        standards are recognized and used throughout the healthcare industry, helping to reduce errors, improve patient
+        outcomes, and increase efficiency.
+
+        We are proud of our history of innovation and leadership in the pharmacy industry, and we look forward to
+        continuing to drive positive change through our standards development and advocacy efforts. Thank you for your
+        interest in NCPDP, and we welcome your involvement and support in our mission.
+      </p>
+    </div>
+  </div>
+  <!-- ***************************************END OF Fourth Topic*********************************************** -->
+
+  <!--The Footer Section-->
+  <footer class="site-footer">
+    <!-- This code represents a container that contains two elements - a column and a form -->
+    <div class="container">
+      <div class="row2">
+        <!-- This div represents a column that contains a title and a paragraph -->
+        <div class="col-sm-12 col-md-6">
+          <h6>Vision</h6>
+          <p class="text-justify">Lead the industry in healthcare standards and
+            solutions for the common good.</p>
+        </div>
+        <!-- This div represents a form for users to subscribe to receive emails -->
+        <div id="form">
+          <form class="quick-subscribe">
+            <div class="subscribe-field">
+              <label for="subscribe-input">Enter your email</label>
+              <input type="email" id="subscribe-input" required />
+            </div>
+            <button class="subscribe-button">Subscribe</button>
+            <div class="subscribe-sent">Thank you</div>
+            <button type="submit" class="subscribe-submit">Send</button>
+          </form>
+          <label for="form1"><small>Subscribe To Receive Emails For Events, News & General NCPDP
+              Information.</small></label>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    <!-- A container that holds the social media links -->
+    <div class="container">
+      <!-- A row that contains the social media links -->
+      <div class="row">
+        <!-- A div that holds the social media links -->
+        <div class="links">
+          <!-- A header for the social media links section -->
+          <h4 class="sm-header">Follow us on</h4>
+          <!-- A line that separates the header and the links -->
+          <div class="line"></div>
+          <!-- An unordered list that holds the social media links -->
+          <ul class="links-list">
+            <!-- A list item that holds a Facebook link -->
+            <li class="links-item">
+              <a href="https://www.facebook.com/NCPDPFoundation/" class="links-link"><i
+                  class="fab fa-facebook-f"></i></a>
+            </li>
+            <!-- A list item that holds a Twitter link -->
+            <li class="links-item">
+              <a href="https://twitter.com/ncpdp?lang=en" class="links-link"><i class="fab fa-twitter"></i></a>
+            </li>
+            <!-- A list item that holds a LinkedIn link -->
+            <li class="links-item">
+              <a href="https://www.linkedin.com/company/ncpdp-foundation" class="links-link"><i
+                  class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- Load Font Awesome icons from a CDN using a script tag -->
+  <script src="https://kit.fontawesome.com/b20d430ebc.js" crossorigin="anonymous"></script>
+
+  <!-- Load Bootstrap JavaScript bundle from local files -->
+  <script src="..\js\bootstrap.bundle.min.js"></script>
+
+  <!-- Load jQuery library from local files -->
+  <script src="..\js\jquery.js"></script>
+
+  <!-- Load custom script for smooth scrolling when clicking on links -->
+  <script src="..\js\scroll.js"></script>
+
+  <!-- Load custom script for website functionality -->
+  <script src="..\js\script.js"></script>
+
+  <!-- Load custom script for form submission functionality -->
+  <script src="..\js\submit.js"></script>
+
+
+
+</body>
+
+</html>

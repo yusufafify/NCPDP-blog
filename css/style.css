@@ -1,0 +1,902 @@
+/* Setting up basic styling for body and html */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+/* sets the text alignment for p elements */
+p {
+  text-align: justify;
+}
+
+/*Styling the Navigation Bar and the Footer*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  transition: all 0.5s ease-in-out;
+}
+
+/* defines the styling for the navigation bar */
+.nav {
+  /* ensures that the navigation bar stays in a fixed position on the screen */
+  position: fixed;
+  /* positions the navigation bar at the top of the screen. */
+  top: 0;
+  /* sets the width of the navigation bar to be 100% of the screen */
+  width: 100%;
+  /*  turns the navigation bar into a flex container so that its child elements can be easily aligned */
+  display: flex;
+  /* aligns the child elements so that they are spaced evenly across the navigation bar */
+  justify-content: space-between;
+  /* sets the stacking order of the navigation bar above other elements on the page */
+  z-index: 1000;
+  /* sets the duration of the transition effect when the navigation bar changes */
+  transition: 0.6s;
+  /* sets the background color of the navigation bar to a semi-transparent black color */
+  background: rgba(0, 0, 0, 0.7);
+  /* adds a shadow effect to the navigation bar */
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  /* sets the border radius of the navigation bar to 10 pixels */
+  border-radius: 10px;
+  /* These are browser-specific prefixes that ensure cross-browser compatibility for the border-radius property*/
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* defines the styling for the right-hand side of the navigation bar */
+.right {
+  /* turns the right-hand side into a flex container so that its child elements can be easily aligned */
+  display: flex;
+  /* adds a margin of 20 pixels to the right-hand side of the navigation bar, which creates space between the right-hand side and the center of the navigation bar */
+  margin-right: 20px;
+}
+
+/* sets the styling for the list items in the navigation bar */
+.nav li {
+  /* adds a margin of 5 pixels to the left and right of each list item, which creates space between the list items */
+  margin: 0 5px;
+}
+
+/* sets the styling for the links in the navigation bar */
+.nav a li {
+  /* adds a margin of 8 pixels to the top of each link, which creates space between the links and the list items */
+  margin-top: 8px;
+}
+
+
+/* Set styles for links within the navigation bar */
+.nav a {
+  /* inherit color from parent element */
+  color: inherit;
+  /*set transition time to 0.3 seconds */
+  transition: 0.3s;
+  /*set font size to 16 pixels */
+  font-size: 16px;
+  /*set font weight to 600 */
+  font-weight: 600;
+  /*set font color to black */
+  color: #000000;
+  /*set top margin to 10 pixels */
+  margin-top: 10px;
+  /*remove text decoration */
+  text-decoration: none;
+  /*set transition for all properties */
+  transition: all 0.5s ease-in-out;
+  /*set font size to large */
+  font-size: large;
+}
+
+/* Set styles for links within the navigation bar */
+
+.nav a {
+  /*display element as inline-block */
+  display: inline-block;
+  /*set position to relative */
+  position: relative;
+  /*set right margin to 10 pixels */
+  margin-right: 10px;
+  /*set font color to white */
+  color: #ffffff;
+  /*set cursor to pointer */
+  cursor: pointer;
+}
+
+li {
+  /* remove list-style from li element */
+  list-style: none;
+}
+
+.left {
+  /* set left margin to 30 pixels */
+  margin-left: 30px;
+}
+
+.left h3 {
+  /* set font color to white */
+  color: white;
+  /* set font size to 30 pixels */
+  font-size: 30px;
+}
+
+.left img {
+  /* hide the image element */
+  display: none;
+}
+
+.left a {
+  /* set top margin to 15 pixels */
+  margin-top: 15px;
+}
+
+nav.scrolled {
+  /* display element as flex */
+  display: flex;
+  /* center justify content */
+  justify-content: center;
+}
+
+nav.scrolled .logo {
+  /* set transition time to 0.3 seconds */
+  transition: transform 0.3s ease;
+  /* center align items */
+  align-items: center;
+
+}
+
+nav.scrolled .logo.expanded {
+  transform: rotate(360deg);
+  /* Applies a rotation transform to the logo element when it has the "expanded" class */
+}
+
+nav.scrolled .left h3 {
+  display: none;
+  /* Hides the h3 element inside the "left" element when the navigation bar is scrolled */
+}
+
+nav.scrolled .left img {
+  display: flex;
+  /* Shows the image inside the "left" element when the navigation bar is scrolled */
+  width: 50px;
+  /* Sets the width of the image */
+  height: 50px;
+  /* Sets the height of the image */
+}
+
+nav.scrolled .left {
+  margin-left: 0;
+  /* Removes the left margin from the "left" element when the navigation bar is scrolled */
+}
+
+
+nav.scrolled .nav {
+  position: fixed;
+  /* Fixes the navigation bar to the top of the viewport when it is scrolled */
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  /* Sets the gap between navigation bar items */
+  width: fit-content;
+  /* Sets the width of the navigation bar to fit its content */
+  padding: 0 20px;
+  /* Adds horizontal padding to the navigation bar */
+  height: 72px;
+  /* Sets the height of the navigation bar */
+  background: rgba(5, 5, 5, 0.9);
+  /* Sets the background color of the navigation bar */
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  /* Adds a box shadow to the navigation bar */
+  border-radius: 30px;
+  /* Sets the border radius of the navigation bar */
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+nav.scrolled .nav .right a li {
+  margin-top: 6px;
+  /* Sets the top margin of the list item elements inside the right side of the navigation bar */
+}
+
+nav.scrolled a {
+  font-size: 18px;
+  /* Sets the font size of all links inside the navigation bar when it is scrolled */
+}
+
+nav.scrolled .right a:hover {
+  color: #3366cc;
+  /* Changes the color of the link text when hovering over a link in the right side of the navigation bar */
+  background-color: rgb(255, 255, 255);
+  /* Changes the background color of the link when hovering over a link in the right side of the navigation bar */
+  border-radius: 30px;
+  /* Adds a border radius to the link when hovering over a link in the right side of the navigation bar */
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.right a:hover {
+  color: #3366cc;
+  /* Changes the color of the link text when hovering over a link in the right side of the navigation bar */
+  background-color: rgb(255, 255, 255);
+  /* Changes the background color of the link when hovering over a link in the right side of the navigation bar */
+  border-radius: 30px;
+  /* Adds a border radius to the link when hovering over a link in the right side of the navigation bar */
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+
+.row {
+  display: flex;
+  /* set display type to flex */
+  justify-content: space-between;
+  /* distribute space between flex items */
+}
+
+.site-footer {
+  background-color: #2c2c2e;
+  /* set background color */
+  padding: 45px 0 20px;
+  /* set top, bottom, and left/right padding */
+  font-size: 15px;
+  /* set font size */
+  line-height: 24px;
+  /* set line height */
+  color: #737373;
+  /* set font color */
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  /* set border color */
+  opacity: 0.5;
+  /* set opacity */
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+  /* set margin */
+}
+
+.site-footer h6 {
+  color: #fff;
+  /* set font color */
+  font-size: 16px;
+  /* set font size */
+  text-transform: uppercase;
+  /* set text to uppercase */
+  margin-top: 5px;
+  /* set top margin */
+  letter-spacing: 2px;
+  /* set letter spacing */
+}
+
+.site-footer a {
+  color: #737373;
+  /* set font color */
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  /* set font color on hover */
+  text-decoration: none;
+  /* remove text decoration on hover */
+}
+
+.footer-links {
+  padding-left: 0;
+  /* set left padding to 0 */
+  list-style: none;
+  /* remove list style */
+}
+
+.footer-links li {
+  display: block;
+  /* set display type to block */
+}
+
+.footer-links a {
+  color: #737373;
+  /* set font color */
+}
+
+.footer-links.inline li {
+  display: inline-block;
+  /* set display type to inline-block */
+}
+
+.site-footer .social-icons a {
+  cursor: pointer;
+  /* set cursor type to pointer */
+}
+
+.copyright-text {
+  margin: 0
+}
+
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+    /* set bottom margin */
+  }
+}
+
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom: 0;
+    /* set bottom padding to 0 */
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+    /* set text alignment to center */
+  }
+}
+
+.social-icons {
+  padding-left: 0;
+  /* set left padding to 0 */
+  margin-bottom: 0;
+  /* set bottom margin to 0 */
+  list-style: none;
+  /* remove list style */
+}
+
+.social-icons li {
+  display: inline-block;
+  /* Set display to inline-block */
+  margin-bottom: 4px;
+  /* Add 4px margin bottom */
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  /* Add 15px margin right */
+  text-transform: uppercase;
+  /* Set text transform to uppercase */
+  color: #96a2b2;
+  /* Set text color */
+  font-weight: 700;
+  /* Set font weight to 700 */
+  font-size: 13px;
+  /* Set font size to 13px */
+}
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display: block;
+    /* Set display to block */
+    margin-right: 0;
+    /* Remove margin right */
+    font-weight: 600
+      /* Set font weight to 600 */
+  }
+}
+
+#links {
+  display: flex;
+  /* Set display to flex */
+  justify-content: flex-start;
+  /* Set justify-content to flex-start */
+}
+
+
+/*****************************************************************************************/
+
+/*Styling for the Main Body of the webpage*/
+/* Styling for background images */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7 {
+  white-space: pre-wrap;
+  /* Set white-space property */
+  position: relative;
+  /* Set position to relative */
+  opacity: 0.65;
+  /* Set opacity to 0.65 */
+  background-attachment: fixed;
+  /* Set background-attachment property to fixed */
+  background-position: center;
+  /* Set background-position property to center */
+  background-repeat: no-repeat;
+  /* Set background-repeat property to no-repeat */
+  background-size: cover;
+  /* Set background-size property to cover */
+}
+
+/* Setting up background images for different sections */
+.bgimg-1 {
+  background-image: url("../Images/NCPDP.jpg");
+  /* Set background-image property */
+  min-height: 700px;
+  /* Set min-height property */
+}
+
+.bgimg-2 {
+  background-image: url("../Images/writing-prescription.jpg");
+  /* Set background-image property */
+  min-height: 500px;
+  /* Set min-height property */
+}
+
+.bgimg-3 {
+  background-image: url("../Images/process.png");
+  /* Set background-image property */
+  min-height: 500px;
+  /* Set min-height property */
+  opacity: 0.8;
+  /* Set opacity to 0.8 */
+}
+
+.bgimg-4 {
+  background-image: url("../Images/services-and-classes.png");
+  /* Set background-image property */
+  min-height: 500px;
+  /* Set min-height property */
+}
+
+.bgimg-5 {
+  background-image: url("../Images/About.png");
+  /* Set background-image property */
+  min-height: 500px;
+  /* Set min-height property */
+}
+
+/* Styling for dark background section */
+.bg-dark {
+  color: #ddd;
+  /* Set text color */
+  background-color: #282e34;
+  /* Set background color */
+  text-align: center;
+  /* Set text align to center */
+  padding: 50px 80px;
+  /* Add padding */
+  text-align: justify;
+  /* Set text align to justify */
+}
+
+/* Styling for light background section */
+.bg-light {
+  color: #777;
+  /* sets the font color */
+  background-color: white;
+  /* sets the background color */
+  text-align: center;
+  /* centers the text horizontally */
+  padding: 50px 80px;
+  /* sets the padding for top/bottom and left/right */
+  text-align: justify;
+  /* justifies the text */
+}
+
+/* Styling for light text section */
+.light-text {
+  text-align: center;
+  /* centers the text horizontally */
+  color: #f7f7f7;
+  /* sets the font color */
+}
+
+/* Styling for border section */
+.border {
+  font-size: 25px;
+  /* sets the font size */
+  color: #f7f7f7;
+  /* sets the font color */
+}
+
+
+/* Styling for Reference section */
+.bgimg-7 a .border {
+  border-radius: 20px;
+  /* adds rounded corners to the border */
+  font-size: 25px;
+  /* sets the font size */
+  color: #f7f7f7;
+  /* sets the font color */
+  -webkit-border-radius: 20px;
+  /* adds rounded corners for webkit browsers */
+  -moz-border-radius: 20px;
+  /* adds rounded corners for mozilla browsers */
+  -ms-border-radius: 20px;
+  /* adds rounded corners for microsoft browsers */
+  -o-border-radius: 20px;
+  /* adds rounded corners for opera browsers */
+}
+
+
+.bgimg-7 a .border:hover {
+  font-weight: bold;
+  /* makes the font bold on hover */
+  font-size: 25px;
+  /* sets the font size on hover */
+  color: #000000;
+  /* sets the font color on hover */
+  background: linear-gradient(to top left, black, blue, violet, white);
+  /* adds a gradient background on hover */
+}
+
+/* Setting up styling for heading and paragraph tags */
+h3 {
+  text-align: center;
+  /* centers the text horizontally */
+}
+
+/* Styling for caption section */
+.caption {
+  position: absolute;
+  /* sets the position to absolute */
+  left: 0;
+  /* aligns the left edge with the left edge of the containing element */
+  top: 50%;
+  /* positions the top edge at the middle of the containing element */
+  width: 100%;
+  /* sets the width to 100% of the containing element */
+  text-align: center;
+  /* centers the text horizontally */
+  color: #000;
+  /* sets the font color */
+}
+
+/* Styling for caption section's inner border span */
+.caption span.border {
+  background-color: #111;
+  /* sets the background color */
+  color: #fff;
+  /* sets the font color */
+  padding: 18px;
+  /* sets the padding for top/bottom and left/right */
+  font-size: 25px;
+  /* sets the font size */
+  letter-spacing: 10px;
+  /* adds spacing between letters */
+}
+
+
+/* Styling for h3 tags */
+h3 {
+  letter-spacing: 5px;
+  /* adds spacing between letters */
+  text-transform: uppercase;
+  /* sets the text to uppercase */
+  font: 20px "Lato", sans-serif;
+  /* sets the font family and size */
+  color: #111;
+  /* sets the font color */
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 600px) {
+
+  /* This media query targets screens with a maximum width of 600px, disabling parallax scrolling for specific elements */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4,
+  .bgimg-5 {
+    white-space: pre-wrap;
+    background-attachment: scroll;
+  }
+
+  /* Styling for header section on small screens */
+  nav {
+    padding: 20px 0px;
+    margin: 0;
+  }
+
+  /* Styling for header links on small screens */
+  .nav a li {
+    padding: 2px 1px;
+    font-weight: none;
+    font-size: 14px;
+  }
+
+  /* Styling for sticky section on small screens */
+  .sticky {
+    padding: 2px 2px;
+    font-weight: none;
+  }
+}
+
+/* Styling for form element */
+#form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Styling for second row of form element */
+.row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for quick subscribe element */
+.quick-subscribe {
+  position: relative;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 1rem rgba(124, 126, 130, 0.05);
+  transition: max-width 0.3s ease;
+  width: 100%;
+  max-width: 13.75rem;
+}
+
+/* Styling for quick subscribe input, success message, and button elements */
+.quick-subscribe #subscribe-input,
+.quick-subscribe .subscribe-sent,
+.quick-subscribe button {
+  font-family: inherit;
+  padding: 1.5rem 2.5rem 1.5625rem;
+  border: 0;
+}
+
+/* Styling for quick subscribe input, success message, and button elements when focused */
+.quick-subscribe #subscribe-input:focus,
+.quick-subscribe .subscribe-sent:focus,
+.quick-subscribe button:focus {
+  outline: 0;
+}
+
+/* Styling for quick subscribe button element */
+.quick-subscribe button {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Styling for the subscription field */
+/* Hide the field initially */
+.quick-subscribe .subscribe-field {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Styling for the subscription input */
+.quick-subscribe .subscribe-field #subscribe-input {
+  width: fit-content;
+  background: none;
+}
+
+/* Styling for the subscription label */
+.quick-subscribe .subscribe-field label {
+  font-family: inherit;
+  color: #bdbec0;
+  position: absolute;
+  left: 2.5rem;
+  top: 1.5rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s 0.3s ease;
+  transform: scale(0);
+  cursor: text;
+}
+
+/* Styling for the subscription button and sent message */
+.quick-subscribe .subscribe-button,
+.quick-subscribe .subscribe-sent {
+  background: none;
+  color: #7c7e82;
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Styling for the subscription button hover state */
+.subscribe-button:hover {
+  color: #000;
+  transition: 0.3s ease-in;
+}
+
+/* Styling for the subscription submit button */
+.quick-subscribe .subscribe-submit {
+  background: #7c7e82;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  border-radius: 2rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s 0.2s ease;
+  transform: scale(0);
+}
+
+/* Styling for the subscription sent message */
+.quick-subscribe .subscribe-sent {
+  font-weight: 700;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s 0.2s ease;
+}
+
+/* Show the field on user interaction */
+.quick-subscribe.show-field {
+  max-width: 27.5rem;
+}
+
+/* Show the subscription field */
+.quick-subscribe.show-field .subscribe-field {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Show the subscription label */
+.quick-subscribe.show-field .subscribe-field label {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition-delay: 0s;
+}
+
+.quick-subscribe.show-field .subscribe-field.has-value label {
+  /* Hide the label when the input field has a value */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.quick-subscribe.show-field .subscribe-button {
+  /* Hide the subscribe button */
+  visibility: hidden;
+  opacity: 0;
+}
+
+.quick-subscribe.show-field .subscribe-submit {
+  /* Show the submit button */
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.quick-subscribe.submitted .subscribe-button {
+  /* Hide the subscribe button when the form has been submitted */
+  display: none;
+}
+
+.quick-subscribe.submitted .subscribe-submit {
+  /* Remove delay from the transition of the submit button when the form has been submitted */
+  transition-delay: 0s;
+}
+
+.quick-subscribe.submitted .subscribe-sent {
+  /* Show the success message when the form has been submitted */
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Style for ordered list */
+ol li {
+  list-style-type: circle;
+  text-align: justify;
+}
+
+ol {
+  /* Position the ordered list */
+  left: 0;
+}
+
+#par {
+  /* Position the paragraph */
+  position: relative;
+  margin-left: 20px;
+}
+
+.links {
+  /* Style for the links container */
+  max-width: 40rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.links:hover {
+  /* Enable pointer events when hovering over the links container */
+  pointer-events: auto;
+}
+
+.sm-header {
+  /* Style for the header */
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.line {
+  /* Style for the line under the header */
+  width: 15rem;
+  height: 3px;
+  background-color: #fff;
+  margin-left: 2rem;
+  margin-right: auto;
+  transform: scaleX(0.2);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.links:hover .line {
+  /* Animate the line under the header when hovering over the links container */
+  transform: scaleX(1);
+}
+
+.links-list {
+  /* Style for the list of links */
+  display: flex;
+  list-style: none;
+}
+
+.links-item {
+  /* Style for each item in the list of links */
+  margin-inline: 2.5rem;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.links-item:nth-child(odd) {
+  /* Position the odd-numbered items in the list */
+  transform: translateY(1.5rem);
+}
+
+.links-item:nth-child(even) {
+  /* Position the even-numbered items in the list */
+  transform: translateY(-5rem);
+}
+
+.links:hover .links-item {
+  /* Animate each item in the list of links when hovering over the links container */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.links-link {
+  /* Style for the links */
+  font-size: 2rem;
+}
+
+.links-link i {
+  /* Style for the icons in the links */
+  transition: color 0.5s;
+}
+
+.links-link:hover i.fa-facebook-f {
+  /* Change the color of the Facebook icon when hovering over the link */
+  color: #3b5998;
+}
+
+.links-link:hover i.fa-twitter {
+  /* Change the color of the Twitter icon when hovering over the link */
+  color: #1da1f2;
+}
+
+.links-link:hover i.fa-linkedin-in {
+  /* Change the color of the icon when the user hovers over a link with the class .links-link and an icon with the class .fa-linkedin-in */
+  color: #0077b5;
+}

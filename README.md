@@ -3,7 +3,15 @@
 ![Build Status](https://agewellmedical.com/wp-content/uploads/doctor-writing-a-prescription.jpg)
 
 ## About the website
-This is a static website for the National Council for Prescription Drug Programs (NCPDP). The website provides information about the organization, its history, applications, services, and contact information. This readme file aims to provide a brief overview of the code structure and functionality of the website.
+This is a static website for the National Council for Prescription Drug Programs (NCPDP). The website provides information about the organization, its history, applications, services, and contact information.
+
+This website uses Javascript to do the Parallex effect:
+<ul>
+  <li>
+    To add visual interest and break up text-heavy pages. Parallax scrolling is used to be a great way to add some visual flair to our website and make it more visually appealing. This is helpful as it can help to keep users engaged and prevent them from getting bored.
+  </li>
+</ul>
+This readme file aims to provide a brief overview of the code structure and functionality of the website.
 
 ## Technologies used
 The website is built using HTML, CSS, Bootstrap and Javascript. The following external libraries and resources are used in the website:
